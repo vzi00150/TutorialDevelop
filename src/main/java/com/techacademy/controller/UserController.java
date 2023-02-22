@@ -60,7 +60,7 @@ public class UserController {
     @GetMapping("/update/{id}/")
     public String getUser(@PathVariable("id") Integer id, Model model, User user) {
         if(id == null) {
-         // Modelに登録
+            // Modelに登録
             model.addAttribute("user", user);
         } else {
             // Modelに登録
@@ -76,7 +76,6 @@ public class UserController {
         if(res.hasErrors()) {
             //エラーあり
             Integer id = null;
-//            model.addAttribute("user", user);
             return getUser(id, model, user);
         }
 

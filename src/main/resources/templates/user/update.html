@@ -25,11 +25,11 @@
         <br>
         <label for="age">年齢</label>
         <input type="text" th:field="*{age}" th:errorclass="err">
-        <span th:errors="*{gender}" class="err"></span>
+        <span th:errors="*{age}" class="err"></span>
         <br>
         <label for="email">メールアドレス</label>
         <input type="text" th:field="*{email}" th:errorclass="err">
-        <span th:errors="*{gender}" class="err"></span>
+        <span th:errors="*{email}" class="err"></span>
         <br>
         <br>
         <input type="submit" value="更新実行">
